@@ -90,24 +90,7 @@ export default function Skills() {
         </FadeIn>
       </div>
 
-      {/* Tech pill cloud */}
-      <FadeIn delay={0.2}>
-        <div className="flex flex-wrap justify-center gap-3 mb-16">
-          {techIcons.map((t, i) => (
-            <motion.div
-              key={t.name}
-              whileHover={{ scale: 1.1, y: -4 }}
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.4, delay: i * 0.05 }}
-              viewport={{ once: true }}
-              className="glass rounded-full px-4 py-2 text-sm font-medium text-white/70 hover:text-white flex items-center gap-2 cursor-default transition-colors border border-white/5 hover:border-white/20"
-            >
-              <span>{t.emoji}</span> {t.name}
-            </motion.div>
-          ))}
-        </div>
-      </FadeIn>
+      
 
       {/* Skill bars grid */}
       <div className="grid md:grid-cols-3 gap-8">

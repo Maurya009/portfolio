@@ -11,10 +11,10 @@ const stats = [
 ]
 
 const traits = [
-  { icon: FiCode, label: 'Clean Coder', color: '#FF3CAC' },
-  { icon: FiZap, label: 'Fast Learner', color: '#FFD200' },
-  { icon: FiCoffee, label: 'Coffee Addict', color: '#784BA0' },
-  { icon: FiHeart, label: 'UI Lover', color: '#00F5A0' },
+  { icon: FiCode, label: 'Clean Coder', color: '#00D4FF' },
+  { icon: FiZap, label: 'Fast Learner', color: '#00D4FF' },
+  { icon: FiCoffee, label: 'Coffee Addict', color: '#7B2FFF' },
+  { icon: FiHeart, label: 'UI Lover', color: '#00FFA3' },
 ]
 
 export default function About() {
@@ -28,16 +28,16 @@ export default function About() {
             <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
-              className="absolute w-[280px] h-[280px] md:w-[360px] md:h-[360px] rounded-full border border-dashed border-[#FF3CAC]/30"
+              className="absolute w-[280px] h-[280px] md:w-[360px] md:h-[360px] rounded-full border border-dashed border-[#00D4FF]/30"
             />
             <motion.div
               animate={{ rotate: -360 }}
               transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-              className="absolute w-[240px] h-[240px] md:w-[310px] md:h-[310px] rounded-full border border-dashed border-[#2B86C5]/20"
+              className="absolute w-[240px] h-[240px] md:w-[310px] md:h-[310px] rounded-full border border-dashed border-[#00D4FF]/20"
             />
 
             {/* Avatar placeholder */}
-            <div className="relative w-52 h-52 md:w-64 md:h-64 rounded-full bg-gradient-to-br from-[#FF3CAC] via-[#784BA0] to-[#2B86C5] flex items-center justify-center text-8xl shadow-2xl shadow-[#FF3CAC]/20">
+            <div className="relative w-52 h-52 md:w-64 md:h-64 rounded-full bg-gradient-to-br from-[#00D4FF] via-[#7B2FFF] to-[#00D4FF] flex items-center justify-center text-8xl shadow-2xl shadow-[#00D4FF]/20">
               👨‍💻
             </div>
 
@@ -82,7 +82,7 @@ export default function About() {
               real, working web applications.
             </p>
             <p className="text-[#8888AA] text-base leading-relaxed mb-4">
-              I recently built and deployed a <span className="text-[#FF3CAC] font-semibold">Vehicle Booking Website</span> —
+              I recently built and deployed a <span className="text-[#00D4FF] font-semibold">Vehicle Booking Website</span> —
               a full-stack project live on the web. I&apos;m actively looking for opportunities
               where I can contribute, grow, and keep building amazing things.
             </p>

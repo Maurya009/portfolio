@@ -18,8 +18,8 @@ const info = [
 
 const socials = [
   { icon: FiGithub,   href: 'https://github.com/Maurya009',   label: 'GitHub',   color: '#8888AA' },
-  { icon: FiLinkedin, href: 'www.linkedin.com/in/suraj-maurya-68b62a28b',  label: 'LinkedIn', color: '#2B86C5' },
-  { icon: FiTwitter,  href: 'https://twitter.com',   label: 'Twitter',  color: '#FF3CAC' },
+  { icon: FiLinkedin, href: 'www.linkedin.com/in/suraj-maurya-68b62a28b',  label: 'LinkedIn', color: '#00D4FF' },
+  { icon: FiTwitter,  href: 'https://twitter.com',   label: 'Twitter',  color: '#00D4FF' },
   { icon: FaWhatsapp,  href: 'https://wa.me/9354967107',           label: 'WhatsApp',  color: '#25D366' },
   { icon: FaInstagram, href: 'https://www.instagram.com/suraj__maurya_____/',  label: 'Instagram', color: '#E1306C' },
 ]
@@ -92,7 +92,7 @@ export default function Contact() {
 
             {info.map((item) => (
               <a key={item.label} href={item.href} className="flex items-center gap-4 mb-4 group">
-                <div className="w-12 h-12 glass rounded-xl flex items-center justify-center text-[#FF3CAC] border border-[#FF3CAC]/20 group-hover:bg-[#FF3CAC]/10 transition-colors">
+                <div className="w-12 h-12 glass rounded-xl flex items-center justify-center text-[#00D4FF] border border-[#00D4FF]/20 group-hover:bg-[#00D4FF]/10 transition-colors">
                   <item.icon size={20} />
                 </div>
                 <div>
@@ -133,7 +133,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   placeholder="Your Name"
-                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/20 text-sm focus:outline-none focus:border-[#FF3CAC]/50 transition-colors"
+                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/20 text-sm focus:outline-none focus:border-[#00D4FF]/50 transition-colors"
                 />
               </div>
               <div>
@@ -145,7 +145,7 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   placeholder="your@email.com"
-                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/20 text-sm focus:outline-none focus:border-[#FF3CAC]/50 transition-colors"
+                  className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/20 text-sm focus:outline-none focus:border-[#00D4FF]/50 transition-colors"
                 />
               </div>
             </div>
@@ -159,7 +159,7 @@ export default function Contact() {
                 required
                 rows={5}
                 placeholder="Tell me about your project..."
-                className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/20 text-sm focus:outline-none focus:border-[#FF3CAC]/50 transition-colors resize-none"
+                className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/20 text-sm focus:outline-none focus:border-[#00D4FF]/50 transition-colors resize-none"
               />
             </div>
 
@@ -168,7 +168,7 @@ export default function Contact() {
               disabled={loading}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full py-3.5 rounded-xl font-semibold text-white flex items-center justify-center gap-2 bg-gradient-to-r from-[#FF3CAC] via-[#784BA0] to-[#2B86C5] hover:shadow-lg hover:shadow-[#FF3CAC]/25 transition-shadow disabled:opacity-70"
+              className="w-full py-3.5 rounded-xl font-semibold text-white flex items-center justify-center gap-2 bg-gradient-to-r from-[#00D4FF] via-[#7B2FFF] to-[#00D4FF] hover:shadow-lg hover:shadow-[#00D4FF]/25 transition-shadow disabled:opacity-70"
             >
               {loading ? (
                 <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
@@ -185,7 +185,7 @@ export default function Contact() {
               <motion.p
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="mt-4 text-center text-sm text-[#00F5A0] font-medium"
+                className="mt-4 text-center text-sm text-[#00FFA3] font-medium"
               >
                 ✅ Message sent! I&apos;ll get back to you soon.
               </motion.p>

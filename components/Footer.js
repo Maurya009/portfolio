@@ -24,7 +24,7 @@ export default function Footer() {
         </a>
 
         <p className="text-[#8888AA] text-sm flex items-center gap-1.5">
-          Built with <FiHeart size={14} className="text-[#FF3CAC]" /> using Next.js &amp; Framer Motion
+          Built with <FiHeart size={14} className="text-[#00D4FF]" /> using Next.js &amp; Framer Motion
         </p>
 
         {/* Visitor counter — sirf tab dikhao jab count load ho jaaye */}
@@ -32,8 +32,8 @@ export default function Footer() {
           <div className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5">
             {/* Green pulsing dot */}
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00F5A0] opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00F5A0]"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00FFA3] opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00FFA3]"></span>
             </span>
             <span className="text-[#8888AA] text-sm">
               {visitors.toLocaleString()} visitors

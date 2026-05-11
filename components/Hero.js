@@ -15,24 +15,24 @@ export default function Hero() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden grid-bg"
     >
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute w-[500px] h-[500px] rounded-full -top-32 -right-32 opacity-25" style={{ background: '#FF3CAC', filter: 'blur(90px)', animation: 'orbFloat 8s ease-in-out infinite' }} />
-        <div className="absolute w-[400px] h-[400px] rounded-full -bottom-20 -left-20 opacity-20" style={{ background: '#2B86C5', filter: 'blur(80px)', animation: 'orbFloat 10s ease-in-out infinite reverse' }} />
-        <div className="absolute w-[300px] h-[300px] rounded-full top-1/2 left-1/3 opacity-15" style={{ background: '#00F5A0', filter: 'blur(70px)', animation: 'orbFloat 12s ease-in-out infinite' }} />
+        <div className="absolute w-[500px] h-[500px] rounded-full -top-32 -right-32 opacity-25" style={{ background: '#FFD700', filter: 'blur(90px)', animation: 'orbFloat 8s ease-in-out infinite' }} />
+        <div className="absolute w-[400px] h-[400px] rounded-full -bottom-20 -left-20 opacity-20" style={{ background: '#FFFFFF', filter: 'blur(80px)', animation: 'orbFloat 10s ease-in-out infinite reverse' }} />
+        <div className="absolute w-[300px] h-[300px] rounded-full top-1/2 left-1/3 opacity-15" style={{ background: '#FF6B6B', filter: 'blur(70px)', animation: 'orbFloat 12s ease-in-out infinite' }} />
       </div>
 
-      <motion.div animate={{ y: [-10, 10, -10] }} transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }} className="absolute top-32 left-6 md:left-16 glass rounded-lg px-3 py-2 text-xs font-mono text-[#00F5A0] opacity-60 hidden md:block">
+      <motion.div animate={{ y: [-10, 10, -10] }} transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }} className="absolute top-32 left-6 md:left-16 glass rounded-lg px-3 py-2 text-xs font-mono text-[#FFD700] opacity-60 hidden md:block">
         const dev = () =&gt; 💻
       </motion.div>
-      <motion.div animate={{ y: [10, -10, 10] }} transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 1 }} className="absolute bottom-40 right-6 md:right-20 glass rounded-lg px-3 py-2 text-xs font-mono text-[#FF3CAC] opacity-60 hidden md:block">
+      <motion.div animate={{ y: [10, -10, 10] }} transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 1 }} className="absolute bottom-40 right-6 md:right-20 glass rounded-lg px-3 py-2 text-xs font-mono text-[#FFD700] opacity-60 hidden md:block">
         &lt;BuildAmazing /&gt;
       </motion.div>
-      <motion.div animate={{ y: [-8, 8, -8] }} transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut', delay: 2 }} className="absolute top-1/3 right-8 md:right-32 glass rounded-lg px-3 py-2 text-xs font-mono text-[#FFD200] opacity-50 hidden lg:block">
+      <motion.div animate={{ y: [-8, 8, -8] }} transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut', delay: 2 }} className="absolute top-1/3 right-8 md:right-32 glass rounded-lg px-3 py-2 text-xs font-mono text-[#00D4FF] opacity-50 hidden lg:block">
         npm run amazing
       </motion.div>
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass border border-[#00F5A0]/30 text-[#00F5A0] text-sm font-medium mb-8">
-          <span className="w-2 h-2 rounded-full bg-[#00F5A0] animate-pulse" />
+        <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass border border-[#FFD700]/30 text-[#FFD700] text-sm font-medium mb-8">
+          <span className="w-2 h-2 rounded-full bg-[#FFD700] animate-pulse" />
           Available for Work
         </motion.div>
 
@@ -65,13 +65,13 @@ export default function Hero() {
 
         {/* Buttons */}
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.9 }} className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-          <a href="#projects" className="px-8 py-3.5 rounded-full font-semibold text-white bg-gradient-to-r from-[#FF3CAC] via-[#784BA0] to-[#2B86C5] hover:scale-105 hover:shadow-2xl hover:shadow-[#FF3CAC]/25 transition-all duration-300 text-base">
+          <a href="#projects" className="px-8 py-3.5 rounded-full font-semibold text-white bg-gradient-to-r from-[#00D4FF] via-[#7B2FFF] to-[#00D4FF] hover:scale-105 hover:shadow-2xl hover:shadow-[#00D4FF]/25 transition-all duration-300 text-base">
             View My Work
           </a>
           <a href="#contact" className="px-8 py-3.5 rounded-full font-semibold text-white glass border border-white/15 hover:border-white/30 hover:scale-105 transition-all duration-300 text-base">
             Let&apos;s Talk
           </a>
-          <a href="/resume.pdf" download="Suraj_Maurya_Resume.pdf" className="px-8 py-3.5 rounded-full font-semibold text-[#00F5A0] glass border border-[#00F5A0]/30 hover:border-[#00F5A0]/60 hover:scale-105 transition-all duration-300 text-base flex items-center gap-2">
+          <a href="/resume.pdf" download="Suraj_Maurya_Resume.pdf" className="px-8 py-3.5 rounded-full font-semibold text-[#FFD700] glass border border-[#FFD700]/30 hover:border-[#00FFA3]/60 hover:scale-105 transition-all duration-300 text-base flex items-center gap-2">
             <FiDownload size={16} />
             Download CV
           </a>
@@ -80,7 +80,7 @@ export default function Hero() {
         {/* Social icons */}
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.1 }} className="flex items-center justify-center gap-5">
           {socials.map(({ icon: Icon, href, label }) => (
-            <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={label} className="w-10 h-10 glass rounded-full flex items-center justify-center text-[#8888AA] hover:text-white hover:border-[#FF3CAC]/50 border border-white/5 transition-all duration-300 hover:scale-110">
+            <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={label} className="w-10 h-10 glass rounded-full flex items-center justify-center text-[#8888AA] hover:text-white hover:border-[#FFD700]/50 border border-white/5 transition-all duration-300 hover:scale-110">
               <Icon size={18} />
             </a>
           ))}

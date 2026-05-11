@@ -9,7 +9,7 @@ const timeline = [
     company: 'Open to Work 🚀',
     desc: 'Fresher Full Stack Developer seeking my first professional role. Ready to contribute, learn, and grow in a real-world team environment.',
     tags: ['Full Stack', 'React', 'Next.js', 'Node.js'],
-    color: '#FF3CAC',
+    color: '#00D4FF',
     type: 'work',
   },
   {
@@ -18,7 +18,7 @@ const timeline = [
     company: 'Personal Project · Deployed on Vercel',
     desc: 'Built and deployed a full-stack vehicle booking platform from scratch. Users can browse and book vehicles online. Live at rydex-booking.vercel.app.',
     tags: ['Next.js', 'MongoDB', 'Tailwind CSS', 'Vercel'],
-    color: '#00F5A0',
+    color: '#00FFA3',
     type: 'project',
   },
   {
@@ -27,7 +27,7 @@ const timeline = [
     company: 'Satyug Darshan Institute of Engineering & Technology, Bhupani Village',
     desc: 'Pursuing B.Tech CSE under J.C. Bose University of Science & Technology (YMCA), Faridabad. Graduating in 2026. Focused on Web Development, DSA, and modern full-stack technologies.',
     tags: ['B.Tech CSE', 'YMCA University', 'Faridabad', '2026'],
-    color: '#2B86C5',
+    color: '#00D4FF',
     type: 'education',
   },
   {
@@ -36,7 +36,7 @@ const timeline = [
     company: 'Self Learning & College',
     desc: 'Began learning programming with C, Java and gradually moved to web development. Fell in love with building things for the web.',
     tags: ['C', 'Java', 'HTML', 'CSS', 'JavaScript'],
-    color: '#FFD200',
+    color: '#00D4FF',
     type: 'achievement',
   },
 ]
@@ -67,7 +67,7 @@ export default function Timeline() {
           whileInView={{ scaleY: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1.5, ease: 'easeInOut' }}
-          className="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-[#FF3CAC] via-[#784BA0] to-[#2B86C5] origin-top"
+          className="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-[#00D4FF] via-[#7B2FFF] to-[#00D4FF] origin-top"
           style={{ transform: 'translateX(-50%)' }}
         />
 

@@ -18,10 +18,10 @@ export default function Loader() {
   }, [])
 
   const dots = [
-    { color: '#FF3CAC', delay: 0 },
-    { color: '#784BA0', delay: 0.15 },
-    { color: '#2B86C5', delay: 0.3 },
-    { color: '#00F5A0', delay: 0.45 },
+    { color: '#00D4FF', delay: 0 },
+    { color: '#7B2FFF', delay: 0.15 },
+    { color: '#00D4FF', delay: 0.3 },
+    { color: '#00FFA3', delay: 0.45 },
   ]
 
   return (
@@ -40,8 +40,8 @@ export default function Loader() {
           }}
         >
           <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', backgroundImage: 'linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px)', backgroundSize: '48px 48px' }} />
-          <div style={{ position: 'absolute', width: 340, height: 340, borderRadius: '50%', background: '#FF3CAC', filter: 'blur(90px)', opacity: 0.1, top: -100, right: -80, pointerEvents: 'none' }} />
-          <div style={{ position: 'absolute', width: 280, height: 280, borderRadius: '50%', background: '#2B86C5', filter: 'blur(80px)', opacity: 0.08, bottom: -80, left: -60, pointerEvents: 'none' }} />
+          <div style={{ position: 'absolute', width: 340, height: 340, borderRadius: '50%', background: '#00D4FF', filter: 'blur(90px)', opacity: 0.1, top: -100, right: -80, pointerEvents: 'none' }} />
+          <div style={{ position: 'absolute', width: 280, height: 280, borderRadius: '50%', background: '#00D4FF', filter: 'blur(80px)', opacity: 0.08, bottom: -80, left: -60, pointerEvents: 'none' }} />
 
           {/* Bouncing Dots */}
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }} style={{ display: 'flex', gap: 14, alignItems: 'flex-end', height: 50, position: 'relative', zIndex: 1 }}>
@@ -54,10 +54,10 @@ export default function Loader() {
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }} style={{ width: 'min(220px, 60vw)', position: 'relative', zIndex: 1 }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8 }}>
               <span style={{ fontSize: 11, color: '#555', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Loading</span>
-              <span style={{ fontSize: 11, fontWeight: 600, color: '#FF3CAC' }}>{Math.round(progress)}%</span>
+              <span style={{ fontSize: 11, fontWeight: 600, color: '#00D4FF' }}>{Math.round(progress)}%</span>
             </div>
             <div style={{ height: 2, background: 'rgba(255,255,255,0.06)', borderRadius: 100, overflow: 'hidden' }}>
-              <div style={{ height: '100%', borderRadius: 100, background: 'linear-gradient(90deg, #FF3CAC, #784BA0, #2B86C5)', width: `${progress}%`, transition: 'width 0.028s linear' }} />
+              <div style={{ height: '100%', borderRadius: 100, background: 'linear-gradient(90deg, #00D4FF, #7B2FFF, #00D4FF)', width: `${progress}%`, transition: 'width 0.028s linear' }} />
             </div>
           </motion.div>
 

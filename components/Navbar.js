@@ -36,14 +36,14 @@ export default function Navbar() {
         {/* ✅ Scroll progress bar — bilkul top pe */}
         <div className="absolute top-0 left-0 right-0 h-[2px] bg-white/5">
           <motion.div
-            className="h-full bg-gradient-to-r from-[#FF3CAC] via-[#784BA0] to-[#2B86C5]"
+            className="h-full bg-gradient-to-r from-[#00D4FF] via-[#7B2FFF] to-[#00D4FF]"
             style={{ width: `${progress}%` }}
             transition={{ ease: 'linear', duration: 0.1 }}
           />
         </div>
 
         <a href="#hero" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-[#FF3CAC]/50 group-hover:border-[#FF3CAC] transition-all duration-300 group-hover:scale-110">
+          <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-[#00D4FF]/50 group-hover:border-[#00D4FF] transition-all duration-300 group-hover:scale-110">
             <img src="/profile.jpg" alt="Suraj Maurya" className="w-full h-full object-cover" />
           </div>
         </a>
@@ -57,7 +57,7 @@ export default function Navbar() {
             </motion.li>
           ))}
           <motion.li initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8 }}>
-            <a href="#contact" className="text-sm font-semibold px-5 py-2 rounded-full border border-[#FF3CAC]/50 text-[#FF3CAC] hover:bg-[#FF3CAC] hover:text-white transition-all duration-300">
+            <a href="#contact" className="text-sm font-semibold px-5 py-2 rounded-full border border-[#00D4FF]/50 text-[#00D4FF] hover:bg-[#00D4FF] hover:text-white transition-all duration-300">
               Hire Me
             </a>
           </motion.li>
@@ -79,7 +79,7 @@ export default function Navbar() {
             transition={{ duration: 0.3 }}
             className="fixed inset-0 z-40 bg-[#0A0A0F]/95 backdrop-blur-2xl flex flex-col items-center justify-center gap-8"
           >
-            <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-[#FF3CAC]/50 mb-4">
+            <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-[#00D4FF]/50 mb-4">
               <img src="/profile.jpg" alt="Suraj Maurya" className="w-full h-full object-cover" />
             </div>
 
@@ -102,7 +102,7 @@ export default function Navbar() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
               onClick={() => setMenuOpen(false)}
-              className="mt-4 px-8 py-3 rounded-full bg-gradient-to-r from-[#FF3CAC] to-[#2B86C5] text-white font-semibold text-lg"
+              className="mt-4 px-8 py-3 rounded-full bg-gradient-to-r from-[#00D4FF] to-[#00D4FF] text-white font-semibold text-lg"
             >
               Hire Me
             </motion.a>

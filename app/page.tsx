@@ -4,6 +4,7 @@ import FloatingMascot from "@/components/FloatingMascot";
 import HomeChat from "@/components/HomeChat";
 import HeroTyping from "@/components/HeroTyping";
 import TiltCard from "@/components/TiltCard";
+import { Download, FileText } from "lucide-react";
 
 const cards: {
   href: string;
@@ -67,6 +68,25 @@ export default function Home() {
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-slate-400 sm:text-base">
             {profile.tagline}
           </p>
+
+          {/* Resume actions */}
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-xl border border-blue-300/30 bg-blue-400/10 px-5 py-3 text-sm font-semibold text-blue-100 shadow-[0_0_24px_rgba(59,130,246,0.08)] transition hover:border-blue-300/60 hover:bg-blue-400/15"
+            >
+              <FileText size={18} /> View Resume
+            </a>
+            <a
+              href="/resume.pdf"
+              download="Suraj-Maurya-Resume.pdf"
+              className="inline-flex items-center gap-2 rounded-xl border border-emerald-300/30 bg-emerald-400/10 px-5 py-3 text-sm font-semibold text-emerald-200 transition hover:border-emerald-300/60 hover:bg-emerald-400/15"
+            >
+              <Download size={18} /> Download Resume
+            </a>
+          </div>
 
           {/* Stats */}
           {profile.stats && (

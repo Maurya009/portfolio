@@ -92,13 +92,13 @@ export default async function ProjectPage({
 
       {/* Project preview */}
       <section className="mt-12">
-        <div className="relative overflow-hidden rounded-[28px] border border-white/10 bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-900 p-3 shadow-2xl sm:p-5">
+        <div className={`relative overflow-hidden rounded-[28px] border border-white/10 ${project.slug === "ym-realty" ? "bg-gradient-to-br from-slate-950 via-emerald-950 to-teal-900" : "bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-900"} p-3 shadow-2xl sm:p-5`}>
           <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-blue-400/10 blur-3xl" />
 
           <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-black/20">
             <Image
-              src="/images/rydex-dashboard.png"
-              alt="Rydex vehicle booking dashboard preview"
+              src={project.slug === "ym-realty" ? "/projects/ym-realty-preview.png" : "/images/rydex-dashboard.png"}
+              alt={project.slug === "ym-realty" ? "YM Realty real estate platform preview" : "Rydex vehicle booking dashboard preview"}
               width={1400}
               height={850}
               priority
@@ -108,8 +108,8 @@ export default async function ProjectPage({
 
           <div className="absolute bottom-7 left-7 h-20 w-20 overflow-hidden rounded-2xl border border-white/20 bg-black/60 p-2 shadow-xl backdrop-blur-md sm:bottom-10 sm:left-10 sm:h-28 sm:w-28">
             <Image
-              src="/images/logo.jpeg"
-              alt="Rydex logo"
+              src={project.slug === "ym-realty" ? "/projects/ym-realty.png" : "/images/logo.jpeg"}
+              alt={project.slug === "ym-realty" ? "YM Realty logo" : "Rydex logo"}
               width={220}
               height={220}
               className="h-full w-full object-contain"

@@ -52,12 +52,7 @@ export default function Home() {
       <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col px-5 pb-10 pt-14 sm:px-8 sm:pt-20">
         {/* Hero */}
         <section className="relative mx-auto w-full max-w-5xl text-center">
-
-          <p className="mb-5 font-mono text-xs font-medium uppercase tracking-[0.35em] text-blue-300">
-            Full-Stack Developer
-          </p>
-
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
+<h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
             <HeroTyping name={profile.name} />
           </h1>
 
@@ -87,23 +82,6 @@ export default function Home() {
               <Download size={18} /> Download Resume
             </a>
           </div>
-
-          {/* Stats */}
-          {profile.stats && (
-            <div className="mt-8 flex flex-wrap justify-center gap-3">
-              {profile.stats.map((stat) => (
-                <div
-                  key={stat.label}
-                  className="rounded-full border border-blue-400/20 bg-blue-500/[0.08] px-5 py-2.5 font-mono text-xs text-slate-300 shadow-[0_0_25px_rgba(37,99,235,0.08)] backdrop-blur-md"
-                >
-                  <span className="font-semibold text-blue-300">
-                    {stat.value}
-                  </span>{" "}
-                  {stat.label}
-                </div>
-              ))}
-            </div>
-          )}
         </section>
 
         {/* Navigation cards */}

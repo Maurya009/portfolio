@@ -118,13 +118,7 @@ export default function ProjectsPage() {
                   {/* Project details */}
                   <div className="min-w-0">
                     <div className="mb-5 flex flex-wrap items-center gap-3">
-                      <span
-                        className={`rounded-full border px-3 py-1.5 font-mono text-xs font-medium ${style.pill} ${style.accent}`}
-                      >
-                        {project.year}
-                      </span>
-
-                      <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/45 sm:text-xs">
+<span className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/45 sm:text-xs">
                         Full-Stack Project
                       </span>
                     </div>
